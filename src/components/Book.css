@@ -1,0 +1,25 @@
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 25px;
+  border: 1px #e8e8e8 solid;
+}
+
+.level {
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.status p {
+  margin-bottom: 0;
+}
