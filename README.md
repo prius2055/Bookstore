@@ -28,7 +28,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Math magicians] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
 This is a Math Magician app for all maths lovers.
 It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app). and helps you perform your mathematical operations in short time.
@@ -62,17 +62,16 @@ It is bootstrapped with [Create React App](https://github.com/facebook/create-re
  
 ### Key Features <a name="key-features"></a>
 
-- **[A Home page for the website]**
-- **[A UI interface for a calculator application]**
-- **[A functional calculator application]**
-- **[Get quotes from an API with fetch and display the quote]**
+
+- **[A UI interface for a Bookstore application]**
+- **[A Navigation link to move between]**
 - **[Linters, to eliminate errors and better optimization]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click [here](https://math-magician-ijj5.onrender.com/) to see a live demo of the apllication
+- Live preview will be up soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +96,7 @@ Example command:
 
 ```sh
   cd my-folder
-  git clone: (https://github.com/prius2055/Math-magicians.git)
+  git clone: (https://github.com/prius2055/Bookstore.git)
 ```
 
 ### Install
@@ -156,6 +155,9 @@ GitHub Pages
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Mobile Responsiveness]**
+- [ ] **[Include logic for adding comments]**
+- [ ] **[Include logic to show the percentage completion for each book read]**
+- [ ] **[Include logic to filter books by Author]**
 - [ ] **[More stylings]**
 - [ ] **[Unit and integraion Test]**
 
@@ -165,7 +167,7 @@ GitHub Pages
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Repository](https://github.com/prius2055/to-do-list)
+Feel free to check the [Repository](https://github.com/prius2055/Bookstore)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
