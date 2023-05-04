@@ -1,21 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Calculator from './pages/Calculator';
-import Quotes from './pages/Quotes';
-import Home from './pages/Home';
-import NavBar from './components/Header';
+import Header from './components/Header';
+import BookList from './components/BookList';
+import NewBookForm from './components/NewBookForm';
 
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      <NavBar />
+      <Header />
       <Routes>
-        <Route path='/books' element={<Home />} />
-        <Route path='/categories' element={<Calculator />} />
-        <Route path='*' element={<p>The page you search does not exist, please go back to home page</p>} />
+        <Route path='/' element={<BookList />} />
+        <Route path='/categories' element={<p>Categories Component</p>} />
       </Routes>
+      <NewBookForm />
     </div>
   );
 }

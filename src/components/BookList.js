@@ -1,7 +1,11 @@
-const BookList = ()=>{
-    return (
-        <div>Book list</div>
-    )
-}
+import Book from './Book';
 
-export default BookList
+import './BookList.css'
+
+const BookList = () => (
+  <div className='book-list'>
+    <Book />
+  </div>
+);
+
+export default BookList;

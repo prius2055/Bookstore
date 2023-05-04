@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo ul {
+  display: flex;
+  margin-left: 50px;
+}
+
+.logo ul li {
+  margin-right: 35px;
+  list-style: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #777;
+}
+
+.logo a.active {
+  color: black;
+}

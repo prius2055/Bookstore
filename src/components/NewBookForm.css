@@ -1,0 +1,31 @@
+.new-book {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.new-book h2 {
+  margin-top: 50px;
+}
+
+.new-book form {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.new-book form input {
+  width: 50%;
+  border: 1px #e8e8e8 solid;
+  padding: 0 14px;
+}
+
+.new-book form select {
+  width: 30%;
+  border: 1px #e8e8e8 solid;
+  padding: 0 14px;
+}
+
+.new-book form button {
+  width: 15%;
+}
