@@ -16,7 +16,7 @@ const Book = ({ bookInfo }) => {
   return (
     <div className='book'>
       <div className='actions'>
-        <p>{bookInfo.genre}</p>
+        <p>{bookInfo.category}</p>
         <h2>{bookInfo.title}</h2>
         <p>{bookInfo.author}</p>
         <button type='submit'>Comments</button> |
@@ -28,8 +28,8 @@ const Book = ({ bookInfo }) => {
       <div className='level'>
         <FontAwesomeIcon icon={faCircle} />
         <div className='status'>
-          <p>{bookInfo.percentageCompletion}</p>
-          {bookInfo.complete ? <p>completed</p> : ''}
+          <p>64%</p>
+          <p>completed</p>
         </div>
       </div>
 

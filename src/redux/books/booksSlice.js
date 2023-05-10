@@ -7,22 +7,17 @@ const bookSlice = createSlice({
   reducers: {
     addBook: (state, action) => {
       const newBookObj = {
-        id: state.bookArray.length,
-        genre: 'Action',
+        item_id: state.bookArray.length,
+        category: 'Action',
         title: action.payload,
         author: 'Suzanne Collins',
-        percentageCompletion: '64%',
-        completed: false,
       };
       state.bookArray.push(newBookObj);
     },
     removeBook: (state, action) => {
       const bookId = action.payload;
 
- 
-
-     state.bookArray= state.bookArray.filter((book) => book.id !== bookId);
-    
+      state.bookArray = state.bookArray.filter((book) => book.id !== bookId);
     },
   },
 });
