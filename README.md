@@ -71,7 +71,7 @@ It is bootstrapped with [Create React App](https://github.com/facebook/create-re
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo will be up soon
+- Live Demo will be up soon!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

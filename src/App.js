@@ -5,6 +5,10 @@ import BookList from './components/BookList';
 import NewBookForm from './components/NewBookForm';
 
 import './App.css';
+import Categories from './components/Categories';
+
+
+
 
 function App() {
   return (
@@ -12,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<BookList />} />
-        <Route path='/categories' element={<p>Categories Component</p>} />
+        <Route path='/categories' element={<Categories />} />
       </Routes>
       <NewBookForm />
     </div>
