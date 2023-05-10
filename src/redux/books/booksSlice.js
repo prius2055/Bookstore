@@ -7,7 +7,7 @@ const bookSlice = createSlice({
   reducers: {
     addBook: (state, action) => {
       const newBookObj = {
-        item_id: state.bookArray.length,
+        item_id: `item${state.bookArray.length + 1}`,
         category: 'Action',
         title: action.payload,
         author: 'Suzanne Collins',
@@ -16,8 +16,9 @@ const bookSlice = createSlice({
     },
     removeBook: (state, action) => {
       const bookId = action.payload;
-
-      state.bookArray = state.bookArray.filter((book) => book.id !== bookId);
+      state.bookArray = state.bookArray.filter(
+        (book) => book.item_id !== bookId
+      );
     },
   },
 });

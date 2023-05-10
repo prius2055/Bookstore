@@ -33,7 +33,7 @@ const NewBookForm = () => {
           <option>Author</option>
           <option>Category</option>
         </select>
-        <Button />
+        <Button>Add book</Button>
       </form>
     </div>
   );

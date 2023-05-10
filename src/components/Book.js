@@ -3,6 +3,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import propTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import Button from './Button';
 
 import './Book.css';
 
@@ -10,7 +11,7 @@ const Book = ({ bookInfo }) => {
   const dispatch = useDispatch();
 
   const removeBookHandler = () => {
-    dispatch(removeBook(bookInfo.id));
+    dispatch(removeBook(bookInfo.item_id));
   };
 
   return (
@@ -20,10 +21,8 @@ const Book = ({ bookInfo }) => {
         <h2>{bookInfo.title}</h2>
         <p>{bookInfo.author}</p>
         <button type='submit'>Comments</button> |
-        <button type='submit' onClick={removeBookHandler}>
-          Remove
-        </button>
-        |<button type='submit'>Edit</button>
+        <Button type='submit' click={removeBookHandler}>Remove</Button>|
+        <button type='submit'>Edit</button>
       </div>
       <div className='level'>
         <FontAwesomeIcon icon={faCircle} />
