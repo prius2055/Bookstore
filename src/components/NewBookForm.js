@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import './NewBookForm.css';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
+import Button from './Button';
+
+import './NewBookForm.css';
 
 const NewBookForm = () => {
   const dispatch = useDispatch();
@@ -31,7 +33,7 @@ const NewBookForm = () => {
           <option>Author</option>
           <option>Category</option>
         </select>
-        <button type='submit'>Add book</button>
+        <Button>Add book</Button>
       </form>
     </div>
   );

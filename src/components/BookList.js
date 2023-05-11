@@ -14,7 +14,7 @@ const BookList = () => {
   return (
     <div className='book-list'>
       {bookArray.map((book) => (
-        <Book key={book.id} bookInfo={book} />
+        <Book key={book.item_id} bookInfo={book} />
       ))}
     </div>
   );

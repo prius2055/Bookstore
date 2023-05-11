@@ -62,9 +62,10 @@ It is bootstrapped with [Create React App](https://github.com/facebook/create-re
  
 ### Key Features <a name="key-features"></a>
 
-
 - **[A UI interface for a Bookstore application]**
 - **[A Navigation link to move between]**
+- **[Users can add their favourite books]**
+- **[Users can remove book from the list]**
 - **[Linters, to eliminate errors and better optimization]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
