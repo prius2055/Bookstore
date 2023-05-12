@@ -1,20 +1,35 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { getBooks } from '../redux/books/booksSlice';
 
 import Book from './Book';
-
 import './BookList.css';
 
 const BookList = () => {
-  const { bookArray } = useSelector((state) => state.books);
+  const { bookArray, isLoading, error } = useSelector((state) => state.books);
+  const dispatch = useDispatch();
 
-  if (bookArray.length === 0) {
-    return <p className='placeholder'>Your catalogue is empty</p>;
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return <p className='placeholder'>Loading...</p>;
   }
+
+  if (error) {
+    return <p>Cannot load page</p>;
+  }
+
+  // if (bookArray.length === 0) {
+  //   return <p className='placeholder'>Your catalogue is empty</p>;
+  // }
 
   return (
     <div className='book-list'>
       {bookArray.map((book) => (
-        <Book key={book.item_id} bookInfo={book} />
+        <Book key={book.id} bookInfo={book} />
       ))}
     </div>
   );

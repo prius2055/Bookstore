@@ -66,6 +66,8 @@ It is bootstrapped with [Create React App](https://github.com/facebook/create-re
 - **[A Navigation link to move between]**
 - **[Users can add their favourite books]**
 - **[Users can remove book from the list]**
+- **[An API to persist added book to the network with post request]**
+- **[An API to persist added book to the network after deleting a book]**
 - **[Linters, to eliminate errors and better optimization]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

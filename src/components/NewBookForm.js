@@ -1,22 +1,38 @@
 import { useState } from 'react';
+import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, postBook } from '../redux/books/booksSlice';
 import Button from './Button';
-
 import './NewBookForm.css';
 
 const NewBookForm = () => {
+  const [title, setTitle] = useState('');
+
   const dispatch = useDispatch();
-  const [newBook, setNewBook] = useState('');
 
   const inputHandler = (e) => {
-    setNewBook(e.target.value);
+    setTitle(e.target.value);
   };
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    dispatch(addBook(newBook));
-    setNewBook('');
+    dispatch(
+      postBook({
+        item_id: nanoid(),
+        title,
+        author: 'Macbeth',
+        category: 'fiction',
+      })
+    );
+    dispatch(
+      addBook({
+        item_id: nanoid(),
+        title,
+        author: 'Macbeth',
+        category: 'fiction',
+      })
+    );
+    setTitle('');
   };
 
   return (
@@ -26,7 +42,7 @@ const NewBookForm = () => {
         <input
           type='text'
           placeholder='Book title'
-          value={newBook}
+          value={title}
           onChange={inputHandler}
         />
         <select>
