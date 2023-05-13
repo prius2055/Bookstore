@@ -59,10 +59,18 @@
 
 .book-info p {
   margin-top: 0;
-  font-family: 'RobotoSlab';
   font-weight: 300;
   letter-spacing: normal;
   color: #4386bf;
+}
+
+.chapter button {
+  border-radius: 3px;
+  background-color: #0290ff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  color: white;
 }
 
 .book-buttons {
@@ -97,15 +105,6 @@
 .chapter-number {
   margin-top: 0;
   margin-bottom: 25px;
-}
-
-.chapter button {
-  border-radius: 3px;
-  background-color: #0290ff;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border: none;
-  color: white;
 }
 
 #circle {
