@@ -1,6 +1,3 @@
-// import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import propTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { delBook, removeBook } from '../redux/books/booksSlice';
@@ -31,10 +28,7 @@ const Book = ({ bookInfo }) => {
         </div>
       </div>
       <div className='level'>
-        <FontAwesomeIcon
-          icon={faCircleNotch}
-          className='level-icon'
-        />
+        <div id='circle'/>
         <div className='status'>
           <p className='percentage'>64%</p>
           <p className='completed'>completed</p>
