@@ -13,6 +13,10 @@ header {
   align-items: center;
 }
 
+.logo h1 {
+  color: #0290ff;
+}
+
 .logo ul {
   display: flex;
   margin-left: 50px;
@@ -30,4 +34,11 @@ header {
 
 .logo a.active {
   color: black;
+}
+
+.user {
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  padding: 14px;
+  color: #0290ff;
 }
