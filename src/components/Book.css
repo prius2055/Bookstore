@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding: 5px 25px;
   border: 1px #e8e8e8 solid;
+  margin-bottom: 15px;
 }
 
 .level {
@@ -13,19 +14,104 @@
   align-items: center;
 }
 
+.level-icon {
+  color: #0290ff;
+  height: 60px;
+}
+
 .status {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .status p {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
-.actions button {
-  cursor: pointer;
+.percentage {
+  font-size: 30px;
+}
+
+.completed {
+  text-transform: capitalize;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.book-info {
+  text-transform: capitalize;
+}
+
+.book-info h4 {
+  color: #121212;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.book-info h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.book-info p {
+  margin-top: 0;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.chapter button {
+  border-radius: 3px;
+  background-color: #0290ff;
+  padding: 10px 20px;
+  text-transform: uppercase;
   border: none;
+  color: white;
+}
+
+.book-buttons {
+  padding-bottom: 10px;
+}
+
+.book-buttons button {
+  cursor: pointer;
+  border: 0;
+  border-right: 2px solid #e8e8e8;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #4386bf;
   background-color: white;
+}
+
+.book-buttons button:first-child {
+  padding-left: 0;
+}
+
+.book-buttons button:last-child {
+  border-right: 0;
+}
+
+.current {
+  text-transform: uppercase;
+  color: #121212;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.chapter-number {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+#circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #0290ff;
+  border-left: 5px solid #e8e8e8;
+  transform: rotate(45deg);
 }

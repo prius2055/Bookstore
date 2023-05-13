@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 
 import './Header.css';
@@ -18,7 +18,8 @@ const Header = () => (
       </ul>
     </div>
 
-    <FontAwesomeIcon icon={faCircleUser} />
+    {/* <FontAwesomeIcon icon={faCircleUser} className='user'/> */}
+    <FontAwesomeIcon icon={faUser} className='user' />
   </header>
 );
 

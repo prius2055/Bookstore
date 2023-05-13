@@ -1,6 +1,3 @@
-// import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import propTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { delBook, removeBook } from '../redux/books/booksSlice';
@@ -18,27 +15,29 @@ const Book = ({ bookInfo }) => {
 
   return (
     <div className='book'>
-      <div className='actions'>
-        <p>{bookInfo.category}</p>
+      <div className='book-info'>
+        <h4>{bookInfo.category}</h4>
         <h2>{bookInfo.title}</h2>
         <p>{bookInfo.author}</p>
-        <button type='submit'>Comments</button> |
-        <Button type='submit' click={removeBookHandler}>
-          Remove
-        </Button>
-        |<button type='submit'>Edit</button>
+        <div className='book-buttons'>
+          <button type='submit'>Comments</button>
+          <Button type='submit' click={removeBookHandler}>
+            Remove
+          </Button>
+          <button type='submit'>Edit</button>
+        </div>
       </div>
       <div className='level'>
-        <FontAwesomeIcon icon={faCircle} />
+        <div id='circle'/>
         <div className='status'>
-          <p>64%</p>
-          <p>completed</p>
+          <p className='percentage'>64%</p>
+          <p className='completed'>completed</p>
         </div>
       </div>
 
-      <div>
-        <p>Current Chapter</p>
-        <p>Chapter 17</p>
+      <div className='chapter'>
+        <p className='current'>Current Chapter</p>
+        <p className='chapter-number'>Chapter 17</p>
         <button type='submit'>Update Progress</button>
       </div>
     </div>

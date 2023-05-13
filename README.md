@@ -182,7 +182,7 @@ If you like this project then please follow me on Linkedin, Twitter and GitHub. 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse team for putting this project task together!
+I would like to thank the Microverse team for putting this project task together.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
